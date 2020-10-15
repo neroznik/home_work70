@@ -16,6 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from api.views import add_view, multiply_view, subtract_view, divide_view
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('add/',add_view),
+    path('multiply/',multiply_view),
+    path('subtract/',subtract_view),
+    path('divide/',divide_view)
 ]
